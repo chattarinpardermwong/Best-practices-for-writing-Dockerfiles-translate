@@ -129,7 +129,7 @@ These Official Images have exemplary `Dockerfile`s:
 
 ## Additional resources:
 
-* [Dockerfile Reference]
-* [More about Base Images]
-* [More about Automated Builds]
-* [Guidelines for Creating Official Images]
+* [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
+* [More about Base Images](https://docs.docker.com/develop/develop-images/baseimages/)
+* [More about Automated Builds](https://docs.docker.com/docker-hub/builds/)
+* [Guidelines for Creating Official Images](https://docs.docker.com/docker-hub/official_images/)
