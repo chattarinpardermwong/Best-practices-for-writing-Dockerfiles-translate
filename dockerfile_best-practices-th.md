@@ -104,7 +104,7 @@
 
 ### VOLUME
 
-<!-- TODO -->
+ควรใช้คำสั่ง `VOLUME` เพื่อใช้ในการเก็บ database storage area, configuration storage หรือ files/folders ใดๆ ที่สร้างโดย docker container และขอแนะนำให้ใช้ `VOLUME` สำหรับส่วน mutable หรือ/และ user-serviceable ของ image
 
 ### USER
 
@@ -112,7 +112,7 @@
 
 ### WORKDIR
 
-<!-- TODO -->
+เพื่อความชัดเจนและน่าเชื่อถือ ควรใช้ absolute paths สำหรับ `WORKDIR` เสมอ นอกจากนี้ควรใช้ `WORKDIR` แทน proliferating instructions เช่น `RUN cd … && do-something` ซึ่งยากต่อการอ่าน แก้ไข และดูแล
 
 ### ONBUILD
 
