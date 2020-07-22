@@ -1,5 +1,5 @@
 # CMD
-[Dockerfile reference for the CMD instruction](Dockerfile reference for the CMD instruction)
+[Dockerfile reference for the CMD instruction](https://docs.docker.com/engine/reference/builder/#cmd)
 
 การใช้คำสั่ง `CMD` เพื่อ Run Software ที่มีอยู่ใน Image จะใช้ในลักษณะดังนี้
 
