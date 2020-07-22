@@ -127,7 +127,7 @@ $ docker run s3cmd ls s3://mybucket
 
 คำสั่ง `ENTRYPOINT` สามารถใช้ร่วมกับ script ตัวช่วยได้ ยอมให้มันทำงานในลักษณะคล้ายกับคำสั่งด้านบน แม้ว่าตอนเริ่มเครื่องมืออาจจะต้องใช้มากกว่าหนึ่งขั้นตอน
 
-ตัวอย่างเช่น [Postgres Official Image](https://hub.docker.com/_/postgres/) ใช้สคริปต์ต่อไปนี้เป็น `ENTRYPOINT`:
+ตัวอย่างเช่น [Postgres Official Image](https://hub.docker.com/_/postgres/) ใช้ script ต่อไปนี้เป็น `ENTRYPOINT`:
 
 ```bash
 #!/bin/bash
