@@ -23,7 +23,7 @@
 - [ADD or COPY](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/chattarin/ADD-COPY.md)
 - ENTRYPOINT
 - VOLUME
-- USERS
+- USER
 - WORKDIR
 - ONBUILD
 ## Examples for Official Images
