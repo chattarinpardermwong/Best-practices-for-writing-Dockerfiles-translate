@@ -17,7 +17,7 @@
 - FROM
 - LABEL
 - RUN
-- CMD
+- [CMD](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/chattarin/CMD.md)
 - EXPOSE
 - ENV
 - [ADD or COPY](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/chattarin/ADD-COPY.md)
