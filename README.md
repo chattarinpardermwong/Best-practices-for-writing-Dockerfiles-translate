@@ -12,7 +12,7 @@
 - Decouple applications
 - Minimize the number of layers
 - Sort multi-line arguments
-- Leverage build cache
+- [Leverage build cache](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/Beck/Leverage%20build%20cache.md)
 ## Dockerfile instructions
 - FROM
 - LABEL
