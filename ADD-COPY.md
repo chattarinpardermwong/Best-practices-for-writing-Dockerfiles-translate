@@ -4,7 +4,7 @@
 
 [Dockerfile reference for the COPY instruction](https://docs.docker.com/engine/reference/builder/#copy)
 
-##### ADD / COPY มีการหน้าที่การทำงานที่คล้ายคลึงกันอยู่ 
+## ADD / COPY มีการหน้าที่การทำงานที่คล้ายคลึงกันอยู่ 
 
 ### COPY
 
