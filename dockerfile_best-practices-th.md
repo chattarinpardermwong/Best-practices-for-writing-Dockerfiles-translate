@@ -100,6 +100,8 @@
 
 ### ENTRYPOINT
 
+[คำสั่ง ENTRYPOINT อ้างอิงจาก Dockerfile](https://docs.docker.com/engine/reference/builder/#entrypoint)
+
 การใช้งานที่เหมาะสมที่สุดสำหรับ `ENTRYPOINT` คือการ set คำสั่งหลักของ image คำสั่งนี้ยอมให้เรียกใช้ image ราวกับว่าเป็นคำสั่งนั้นๆ ได้ (จากนั้นใช้ `CMD` เป็น default flags)
 
 เริ่มจากตัวอย่างของ image สำหรับ command line tool `s3cmd`:
@@ -178,9 +180,13 @@ $ docker run --rm -it postgres bash
 
 ### VOLUME
 
+[คำสั่ง VOLUME อ้างอิงจาก Dockerfile](https://docs.docker.com/engine/reference/builder/#volume)
+
 ควรใช้คำสั่ง `VOLUME` เพื่อใช้ในการเก็บ database storage area, configuration storage หรือ files/folders ใดๆ ที่สร้างโดย docker container และขอแนะนำให้ใช้ `VOLUME` สำหรับส่วน mutable หรือ/และ user-serviceable ของ image
 
 ### USER
+
+[คำสั่ง USER อ้างอิงจาก Dockerfile](https://docs.docker.com/engine/reference/builder/#user)
 
 หาก service สามารถ run without privileges ได้ ให้ใช้ `USER` เพื่อเปลี่ยนเป็น non-root user ก่อน เริ่มด้วยการสร้าง user และ group ใน `Dockerfile` ตัวอย่างเช่น `RUN groupadd -r postgres && useradd --no-log-init -r -g postgres postgres`
 
@@ -200,9 +206,13 @@ $ docker run --rm -it postgres bash
 
 ### WORKDIR
 
+[คำสั่ง WORKDIR อ้างอิงจาก Dockerfile](https://docs.docker.com/engine/reference/builder/#workdir)
+
 เพื่อความชัดเจนและน่าเชื่อถือ ควรใช้ absolute paths สำหรับ `WORKDIR` เสมอ นอกจากนี้ควรใช้ `WORKDIR` แทน proliferating instructions เช่น `RUN cd … && do-something` ซึ่งยากต่อการอ่าน แก้ไข และดูแล
 
 ### ONBUILD
+
+[คำสั่ง ONBUILD อ้างอิงจาก Dockerfile](https://docs.docker.com/engine/reference/builder/#onbuild)
 
 <!-- TODO -->
 
