@@ -1,6 +1,6 @@
 ## วิธีการขียน Dockerfiles ที่ดี
 
-    ในเอกสารฉบับนี้จะอธิบายถึงวิธีการเขียนและ build Dockerfile.  Docker จะสร้าง image  อัตโนมัติโดยการอ่านชุดคำสั่งจาก Dockerfile ซึ่งเป็นไฟล์ที่บรรจุชุดคำสั่ง ลำดับ และ สิ่งที่ต้องใช้ในการ build image 
+ในเอกสารฉบับนี้จะอธิบายถึงวิธีการเขียนและ build Dockerfile. Docker จะสร้าง image อัตโนมัติโดยการอ่านชุดคำสั่งจาก Dockerfile ซึ่งเป็นไฟล์ที่บรรจุชุดคำสั่ง ลำดับ และ สิ่งที่ต้องใช้ในการ build image
 
 ```
 FROM ubuntu:18.04
@@ -11,15 +11,15 @@ CMD python /app/app.pyogvolume01: {}
 
 แต่ละชุดคำสั่งจะสร้างหนึ่งชั้น
 
-    - FROM สร้างชั้นจาก  `ubuntu:18.04`  สำหรับ Docker image
+- FROM สร้างชั้นจาก `ubuntu:18.04` สำหรับ Docker image
 
-    - COPY เพิ่มไฟล์จาก directory  ปัจจุบัน
+- COPY เพิ่มไฟล์จาก directory ปัจจุบัน
 
-    - RUN สร้าง apllication ด้วย `make`
+- RUN สร้าง apllication ด้วย `make`
 
-    - CMD ระบุคำสั่งที่ใช้ใน container
+- CMD ระบุคำสั่งที่ใช้ใน container
 
-เมื่อ run image และ สร้าง container สามารถเพิ่มชั้นที่*สามารถเขียนได้*  (container layer) การเปลี่ยนแปลงทั้งหมดที่เกี่ยวกับการ run container เช่นการเขียนไฟล์ใหม่ เปลี่ยนแปลไฟล์ที่มีอยู่แล้ว และการลบไฟล์ ทั้งหมดสามารถกำหนดได้ใน layer นี้
+เมื่อ run image และ สร้าง container สามารถเพิ่มชั้นที่*สามารถเขียนได้* (container layer) การเปลี่ยนแปลงทั้งหมดที่เกี่ยวกับการ run container เช่นการเขียนไฟล์ใหม่ เปลี่ยนแปลไฟล์ที่มีอยู่แล้ว และการลบไฟล์ ทั้งหมดสามารถกำหนดได้ใน layer นี้
 
 ## แนวทางการปฎิบัติและคำแนะนำ
 
@@ -29,11 +29,11 @@ Image ที่สร้างมาจาก `Dockerfile` ควรสร้า
 
 ### ทำความเข้าใจกับการ build
 
-เมื่อพูดถึงคำสั่ง docker build directory ที่กำลังทำงานอยู่เรียกว่า *build context*  โดยปกติ Dockerfile จะทำงานที่ build context แต่สามารถกำหนดได้เองโดยใช้ flag `(-f)` เมื่อไม่คำนึงถึงว่า Dockerfile อยู่ที่ไหน เนื้อหาของไฟล์และ directory จะถูกส่งไปที่ Docker daemon ในรูปแบบของ build content
+เมื่อพูดถึงคำสั่ง docker build directory ที่กำลังทำงานอยู่เรียกว่า *build context* โดยปกติ Dockerfile จะทำงานที่ build context แต่สามารถกำหนดได้เองโดยใช้ flag `(-f)` เมื่อไม่คำนึงถึงว่า Dockerfile อยู่ที่ไหน เนื้อหาของไฟล์และ directory จะถูกส่งไปที่ Docker daemon ในรูปแบบของ build content
 
 > #### ตัวอย่างการ Build
 > 
-> สร้าง directoty สำหรับ build แล้ว  `cd` เพื่อเข้าไปใน directory นั้น พิมพ์  "hello" ใน text file ที่ชื่อ `hello` แล้วสร้าง Dockerfile ที่ run คำสั่ง `cat`  สร้าง image ด้วยคำสั่ง `(.)`:
+> สร้าง directoty สำหรับ build แล้ว `cd` เพื่อเข้าไปใน directory นั้น พิมพ์ "hello" ใน text file ที่ชื่อ `hello` แล้วสร้าง Dockerfile ที่ run คำสั่ง `cat` สร้าง image ด้วยคำสั่ง `(.)`:
 > 
 > ```
 > mkdir myproject && cd myproject
@@ -42,7 +42,7 @@ Image ที่สร้างมาจาก `Dockerfile` ควรสร้า
 > docker build -t helloapp:v1 .
 > ```
 > 
-> ย้าย `Dockerfile` และ `hello` ไว้ใน directory ที่แยกกัน build image  ใช้ `-f` เพื่อเลี่ยง cache จากการ build ครั้งก่อน
+> ย้าย `Dockerfile` และ `hello` ไว้ใน directory ที่แยกกัน build image ใช้ `-f` เพื่อเลี่ยง cache จากการ build ครั้งก่อน
 > 
 > ```
 > mkdir -p dockerfiles context
@@ -50,8 +50,70 @@ Image ที่สร้างมาจาก `Dockerfile` ควรสร้า
 > docker build --no-cache -t helloapp:v2 -f dockerfiles/Dockerfile context
 > ```
 
-การเพิ่มไฟล์ที่ไม่จำเป็นต่อการ build จะทำให้ผลลัพธ์ของการ build ใหญ่กว่า build context และทำให้ image มีขนาดใหญ่ขึ้น ทำให้ใช้เวลาในการ build pull และ push นานขึ้น สามารถดูขนาดของ build context โดยสังเกตุจากข้อความเวลาที่ buiild `Dockerfile`  ตามตัวอย่างนี้
+การเพิ่มไฟล์ที่ไม่จำเป็นต่อการ build จะทำให้ผลลัพธ์ของการ build ใหญ่กว่า build context และทำให้ image มีขนาดใหญ่ขึ้น ทำให้ใช้เวลาในการ build pull และ push นานขึ้น สามารถดูหขานาดของ build context โดยสังเกตุจากข้อความเวลาที่ buiild `Dockerfile` ตามตัวอย่างนี้
 
 ```
 Sending build context to Docker daemon  187.8MB
 ```
+
+### Pipe Dockerfile ผ่าน `stdin`
+
+Docker มีความสามารถในการสร้าง image ผ่าน `stdin` ซึ่งทำให้การสร้างไม่ต้องเขัยน Dockerfile ลง disk หรือใช้ในตอนที่ `Dockerfile` สร้างแล้วไม่ต้องเก็บไฟล์ไว้
+
+> #### ตัวอย่างต่อไปนี้คือตัวอย่างแบบง่ายแต่สามารถใช้ method ที่มากับ `stdin` ได้
+> 
+> ตัวอย่าง (ทั้งสองคำสั่งเหมือนกัน)
+> 
+> ```
+> echo -e 'FROM busybox\nRUN echo "hello world"' | docker build -
+> ```
+> 
+> ```
+> docker build -<<EOF
+> FROM busybox
+> RUN echo "hello world"
+> EOF
+> ```
+> 
+> สามารถแทนที่ด้วยคำสั่งอะไรก้ได้
+
+### สร้าง image โดยใช้ Dockerfile จาก STDIN โดยไม่มี build context
+
+สร้าง image ใช้ Dockerfile จาก stdin โดยไม่ใช้ไฟล์อื่นเพิ่ม `(-)` แทนตำแหน่งของ `PATH` ที่ใช้บอกให้ Docker อ่านวิธีการสร้างจาก stdin
+
+```
+docker build [OPTIONS] -
+```
+
+ตัวอย่างต่อไปนี้สร้าง image โดยใช้ Dockerfile ผ่าน stdin โดยไม่มีไฟล์ไหนส่ง build context เพิ่ม
+
+```
+docker build -t myimage:latest -<<EOF
+FROM busybox
+RUN echo "hello world"
+EOF
+```
+
+Build context มีประโยชน์ในกรณีที่ Dockerfile ไม่ต้องการไฟล์เพื่อที่จะ copy ใส่ใน image และเพืิ่มความเร็วในการสร้าง ถ้าอยากเพิ่อมความเร็วของการสร้าง โดยเว้นบางไฟล์ไว้สามารถศึกษาเพิ่มได้จาก .dokerignore
+
+> #### การสร้าง Dockerfile ที่ใช้ `COPY` หรือ `ADD` จะไม่สามารถใช้ตามตัวอย่างต่อไปนี้
+> 
+> ```
+> # create a directory to work in
+> mkdir example
+> cd example
+> 
+> # create an example file
+> touch somefile.txt
+> 
+> docker build -t myimage:latest -<<EOF
+> FROM busybox
+> COPY somefile.txt .
+> RUN cat /somefile.txt
+> EOF
+> 
+> # observe that the build fails
+> ...
+> Step 2/3 : COPY somefile.txt .
+> COPY failed: stat /var/lib/docker/tmp/docker-builder249218248/somefile.txt: no such file or directory
+> ```
