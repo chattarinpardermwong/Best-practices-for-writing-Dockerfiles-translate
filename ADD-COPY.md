@@ -19,13 +19,13 @@
 
 โดยการทำวิธีนี้จะช่วยให้ Cache จากการ Build นั้นมีความถูกต้องในแต่ละไฟล์ 
 
-      COPY requirements.txt /tmp/
+     COPY requirements.txt /tmp/
 
-      RUN pip install --requirement /tmp/requirements.txt
+     RUN pip install --requirement /tmp/requirements.txt
   
-      COPY . /tmp/
+     COPY . /tmp/
 
-- ผลลัพธ์ได้จะได้รับคือ Cache จะถูกต้องมากกว่าการ `COPY . /tmp/` ไว้ที่บนสุด
+- ผลลัพธ์ได้จะได้รับคือ Cache จะถูกต้องมากกว่าการ `COPY . /tmp/` ไว้ที่บนสุดของตัวอย่างข้างต้น
 
 ### ADD 
 - เนื่องจากขนาดของ Image มีความสำคัญ (memory) การใช้ คำสั่ง `ADD` เพื่อดึงข้อมูลpackage แบบ Remote URLs จึงไม่ควรทำอย่างยิ่ง
@@ -35,11 +35,11 @@
 
 โดยจะยกตัวอย่างที่ไม่ควรทำให้คือ
 
-      ADD http://example.com/big.tar.xz /usr/src/things/
+     ADD http://example.com/big.tar.xz /usr/src/things/
 
-      RUN tar -xJf /usr/src/things/big.tar.xz -C /usr/src/things
+     RUN tar -xJf /usr/src/things/big.tar.xz -C /usr/src/things
 
-      RUN make -C /usr/src/things all
+     RUN make -C /usr/src/things all
 
 โดยควรทำดังนี้
 
