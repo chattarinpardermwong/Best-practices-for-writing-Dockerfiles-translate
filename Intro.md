@@ -50,7 +50,7 @@ Image ที่สร้างมาจาก `Dockerfile` ควรสร้า
 > docker build --no-cache -t helloapp:v2 -f dockerfiles/Dockerfile context
 > ```
 
-การเพิ่มไฟล์ที่ไม่จำเป็นต่อการ build จะทำให้ผลลัพธ์ของการ build ใหญ่กว่า build context และทำให้ image มีขนาดใหญ่ขึ้น ทำให้ใช้เวลาในการ build pull และ push นานขึ้น สามารถดูหขานาดของ build context โดยสังเกตุจากข้อความเวลาที่ buiild `Dockerfile`  ตามตัวอย่างนี้
+การเพิ่มไฟล์ที่ไม่จำเป็นต่อการ build จะทำให้ผลลัพธ์ของการ build ใหญ่กว่า build context และทำให้ image มีขนาดใหญ่ขึ้น ทำให้ใช้เวลาในการ build pull และ push นานขึ้น สามารถดูขนาดของ build context โดยสังเกตุจากข้อความเวลาที่ buiild `Dockerfile`  ตามตัวอย่างนี้
 
 ```
 Sending build context to Docker daemon  187.8MB
