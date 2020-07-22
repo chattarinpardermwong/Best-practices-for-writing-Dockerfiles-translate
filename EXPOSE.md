@@ -1,5 +1,6 @@
 # EXPOSE
 [Dockerfile reference for the EXPOSE instruction](https://docs.docker.com/engine/reference/builder/#expose)
+
 คำสั่ง EXPOSE เป็นการระบุพอร์ต รับการเชื่อมต่อ
 
 สำหรับ Container เราควรจะใช้ Port ทั่วไป(Common port)
