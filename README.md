@@ -33,3 +33,7 @@
   - [Hy](https://hub.docker.com/_/hylang/)
   - [Ruby](https://hub.docker.com/_/ruby/)
 ## Additional resources:
+  - [Dockerfile Reference](https://docs.docker.com/engine/)
+  - [More about Base Images](https://docs.docker.com/develop/develop-images/baseimages/)
+  - [More about Automated Builds](https://docs.docker.com/docker-hub/builds/)
+  - [Guidelines for Creating Official Images](https://docs.docker.com/docker-hub/official_images/)
