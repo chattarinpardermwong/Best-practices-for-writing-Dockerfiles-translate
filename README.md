@@ -1,12 +1,12 @@
 # Best practices for writing Dockerfiles
 ## General guidelines and recommendations
-- Create ephemeral containers
-- Understand build context
-- Pipe Dockerfile through `stdin`
-  - Build an image using a Dockerfile from stdin, without sending build context
-  - Build from a local build context, using a Dockerfile from stdin
-  - Build from a remote build context, using a Dockerfile from stdin
-- Exclude with .dockerignore
+- [Create ephemeral containers](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/Create%20ephemeral%20containers.md)
+- [Understand build context](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/Understand%20build%20context.md)
+- [Pipe Dockerfile through `stdin`](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/Pipe%20Dockerfile%20through%20stdin.md)
+  - [Build an image using a Dockerfile from stdin, without sending build context](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/Build%20an%20image%20using%20a%20Dockerfile.md)
+  - [Build from a local build context, using a Dockerfile from stdin](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/Build%20from%20a%20local%20build%20context.md)
+  - [Build from a remote build context, using a Dockerfile from stdin](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/Build%20from%20a%20remote%20build%20context.md)
+- [Exclude with .dockerignore](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/exclude.md)
 - [Use multi-stage builds](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/khan/Use-multi-stage-builds.md)
 - [Don't install unnecessary packages](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/khan/Use-multi-stage-builds.md)
 - [Decouple applications](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/khan/Decouple-applications.md)
