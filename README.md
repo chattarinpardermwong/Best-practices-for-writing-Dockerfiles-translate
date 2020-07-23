@@ -14,7 +14,7 @@
 - [Sort multi-line arguments](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/khan/Sort%20muiti-line-arguments.md)
 - [Leverage build cache](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/Beck/Leverage%20build%20cache.md)
 ## Dockerfile instructions
-- [FROM](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/Beck/FROM.md)
+- FROM
 - LABEL
 - RUN
 - [CMD](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/chattarin/CMD.md)
@@ -37,3 +37,9 @@
   - [More about Base Images](https://docs.docker.com/develop/develop-images/baseimages/)
   - [More about Automated Builds](https://docs.docker.com/docker-hub/builds/)
   - [Guidelines for Creating Official Images](https://docs.docker.com/docker-hub/official_images/)
+## Member  
+  - Donlaporn Chantarat(Nam)      - FE
+  - Jitrin Panitdirake(Beck)      - BE
+  - Chattarin Pardermwong (Lego)  - BE
+  - Smarch Poonkwan (Khan)        - FE
+  - Araya Siriadun (Aim)          - BE
