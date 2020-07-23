@@ -26,20 +26,26 @@
 - USER
 - WORKDIR
 - ONBUILD
-## Examples for Official Images
-#### These Official Images have exemplary Dockerfiles:
-  - [Go](https://hub.docker.com/_/golang/)
-  - [Perl](https://hub.docker.com/_/perl/)
-  - [Hy](https://hub.docker.com/_/hylang/)
-  - [Ruby](https://hub.docker.com/_/ruby/)
-## Additional resources:
-  - [Dockerfile Reference](https://docs.docker.com/engine/)
-  - [More about Base Images](https://docs.docker.com/develop/develop-images/baseimages/)
-  - [More about Automated Builds](https://docs.docker.com/docker-hub/builds/)
-  - [Guidelines for Creating Official Images](https://docs.docker.com/docker-hub/official_images/)
+
+## ตัวอย่างสำหรับ Official Images
+
+Official Images นี้เป็นตัวอย่างที่ดีสำหรับการสร้าง `Dockerfile`:
+
+* [Go](https://hub.docker.com/_/golang/)
+* [Perl](https://hub.docker.com/_/perl/)
+* [Hy](https://hub.docker.com/_/hylang/)
+* [Ruby](https://hub.docker.com/_/ruby/)
+
+## แหล่งข้อมูลเพิ่มเติม:
+
+* [ข้อมูลอ้างอิงจาก Dockerfile](https://docs.docker.com/engine/reference/builder/)
+* [ข้อมูลเพิ่มเติมเกี่ยวกับ Base Images](https://docs.docker.com/develop/develop-images/baseimages/)
+* [ข้อมูลเพิ่มเติมเกี่ยวกับ Automated Builds](https://docs.docker.com/docker-hub/builds/)
+* [แนวทางการปฎิบัติสำหรับการสร้าง Official Images](https://docs.docker.com/docker-hub/official_images/)
+
 ## Member  
-  - Donlaporn Chantarat(Nam)      - FE
-  - Jitrin Panitdirake(Beck)      - BE
-  - Chattarin Pardermwong (Lego)  - BE
-  - Smarch Poonkwan (Khan)        - FE
-  - Araya Siriadun (Aim)          - BE
+  - Donlaporn Chantarat (Nam)      - FE
+  - Jitrin Panitdirake (Beck)      - BE
+  - Chattarin Pardermwong (Lego)   - BE
+  - Smarch Poonkwan (Khan)         - FE
+  - Araya Siriadun (Aim)           - BE
