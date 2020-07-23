@@ -27,4 +27,10 @@
 - WORKDIR
 - ONBUILD
 ## Examples for Official Images
+  - These Official Images have exemplary Dockerfiles:
+  
+  - [Go](https://hub.docker.com/_/golang/)
+  - [Perl](https://hub.docker.com/_/perl/)
+  - [Hy](https://hub.docker.com/_/hylang/)
+  - [Ruby](https://hub.docker.com/_/ruby/)
 ## Additional resources:
