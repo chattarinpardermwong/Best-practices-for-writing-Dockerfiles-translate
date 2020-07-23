@@ -13,7 +13,7 @@
 - [Minimize the number of layers](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/khan/Minimize-the-number-of-layers.md)
 - [Sort multi-line arguments](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/khan/Sort%20muiti-line-arguments.md)
 - [Leverage build cache](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/Beck/Leverage%20build%20cache.md)
-## [Dockerfile instructions](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/Beck/Dockerfile-instructions.md)
+## Dockerfile instructions
 - [FROM](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/Beck/FROM.md)
 - [LABEL](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/Beck/LABEL.md)
 - [RUN](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/Beck/RUN.md)
