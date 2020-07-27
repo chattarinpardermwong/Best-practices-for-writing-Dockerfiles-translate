@@ -21,11 +21,11 @@
 - [EXPOSE](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/chattarin/EXPOSE.md)
 - [ENV](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/chattarin/ENV.md)
 - [ADD or COPY](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/chattarin/ADD-COPY.md)
-- ENTRYPOINT
-- VOLUME
-- USER
-- WORKDIR
-- ONBUILD
+- [ENTRYPOINT](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/ENTRYPOINT.md)
+- [VOLUME](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/VOLUME.md)
+- [USER](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/USER.md)
+- [WORKDIR](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/WORKDIR.md)
+- [ONBUILD](https://github.com/chattarinpardermwong/Best-practices-for-writing-Dockerfiles-translate/blob/develop/ONBUILD.md)
 
 ## ตัวอย่างสำหรับ Official Images
 
